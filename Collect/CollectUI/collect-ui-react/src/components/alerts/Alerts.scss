@@ -1,0 +1,247 @@
+.default-empty-alert-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.alert-content-box{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0px 15px;
+
+    .alert-info-box{
+        position: relative;
+        display: table-cell;
+        width: 10%;
+        text-align: left;
+
+        .alert-name{
+            position: relative;
+            display: inline-block;
+            width: 40%;
+        }
+
+        .alert-condtion{
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 21px;
+            color: #1389dc;
+            padding-right: 5px;
+        }
+
+        .alert-value{
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 14px;
+            width: 15%;
+            color: #1389dc;
+        }
+       .alert-function{
+            position: relative;
+            display: inline-block;
+            padding-right: 5px;
+            vertical-align: text-bottom;
+        }
+    }
+
+    .alert-enable-box{
+        position: relative;
+        display: table-cell;
+        width: 1%;
+        text-align: left;
+
+        .MuiButtonBase-root{
+            color: #1389dc !important;
+        }
+
+        .MuiFormControlLabel-root{
+            margin: 0px;
+
+            .MuiFormControlLabel-label{
+                font-size: 14.5px;
+            }
+        }
+    }
+    
+    .alert-action-box{
+        position: relative;
+        display: table-cell;
+        width: 1%;
+
+        span{
+            display: inline-block;
+            margin-right: 6px;
+            cursor: pointer;
+            text-align: right;
+        }
+
+        span svg{
+            width: 24px;
+            height: 24px;
+            color: #928e8e;
+        }
+
+        span:hover svg{
+            color: #1389dc !important;
+        }
+    }
+    .alert-icon-box{
+        position: relative;
+        display: table-cell;
+        width: 1%;
+    }
+   
+
+    
+}
+.card-body .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 2px rgba(0, 0, 0, 0.12);
+}
+.card-body .MuiListItem-gutters{
+    padding-left: 0px;
+}
+.add-common-btn{
+    position: relative;
+    float: left;
+}
+.add-common-btn button{
+    margin: 0 0 5px 0 !important;
+    top: 0;
+    right: 1px;
+    padding: 3px 11px;
+    text-transform: none;
+    font-size: 14px;
+    z-index: 1;
+    outline: 0 !important;
+}
+.add-common-btn button svg{
+    width: 22px;
+    height: 22px;
+    color: #1389dc;
+}
+.alert-add-modal{
+    .MuiDialog-paperWidthMd {
+        max-width: 850px;
+
+        .MuiFormControl-root{
+            min-width: 250px;
+
+            .MuiFormLabel-root{
+                background: #FFF;
+                font-size: 15px;
+            }
+        }
+
+        .MuiInputBase-root .MuiSelect-root, .MuiList-root .MuiButtonBase-root{
+            font-size: 15px !important;
+        }
+    }
+
+    .MuiDialog-scrollPaper{
+        align-items: start;
+    }
+    
+}
+.alert-advnc-btn{
+    position: relative;
+    padding: 0px 0 0px;
+    color: #1389dc;
+    font-size: 15px;
+    margin-left: 10px !important;
+    cursor: pointer;
+}
+.alert-advnc-btn:hover{
+    text-decoration: underline;
+}
+.alert-advanced-feature{
+    margin: 0px !important;
+    width: 100%;
+    
+    .hidden-input{
+        display: none !important;
+    }
+}
+
+/*MUI Modal*/
+.alert-modal-head{
+    position: relative;
+    padding: 16px 17px 11PX !important;
+    background-color: #f3f3f3;
+    color: #232323;
+    font-weight: 500;
+
+    button{
+        color: #9e9e9e;
+        padding: 2px;
+    }
+}
+.top-head-enable{
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    z-index: 10;
+}
+.alert-modal-btns button{
+    margin: 5px !important;
+    padding: 3px 11px;
+    text-transform: none;
+    font-size: 14px;
+    z-index: 1;
+    outline: 0 !important;
+    color: #1389dc;
+    opacity: 1;
+    border: 1px solid #1389dc;
+    float: right;
+
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    outline: 0;
+}
+
+.act-seperate-block{
+    display: inline-flex;
+    margin: 0px !important;
+    background-color: #f4f4f5 !important;
+    width: 100%;
+    .makeStyles-root-13{
+        background-color: transparent !important; 
+    }
+
+    .MuiInputBase-root{
+        background-color: #ffffff;
+    }
+}
+.pt-8 {
+    padding-top: 8px !important;
+}
+.alert-filters{
+    position: relative;
+    z-index: 1;
+    margin-left: 17px;
+    .full-width{
+        margin-right: 17px;
+        width: 150px;
+    }
+    .MuiInputBase-root{
+  
+      input{
+        padding: 8px 10px;
+        font-size: 14px;
+  
+      }
+    }
+  }
+  .no-result{
+    text-align: center !important;
+    display: block !important;
+    line-height: 15 !important;
+  }

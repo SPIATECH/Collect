@@ -1,0 +1,45 @@
+.alerts-left-side-container{
+    overflow-y: auto;
+}
+.rightbar{
+    padding-left: 10px;
+    overflow-x: hidden;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.MuiTypography-colorPrimary {
+    color: #676767 !important;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #f2f4f9;
+    border-radius: .25rem;
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    height: auto;
+    min-height: 89vh;
+}
+.card .card-body{
+    padding: 1rem 1.5rem;
+    flex: 1 1 auto;
+}
+.card .card-header {
+    padding: 7px;
+    margin-bottom: 0;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #d8d0d0;
+    color: #232323;
+    text-align: center;
+    font-weight: 500;
+}

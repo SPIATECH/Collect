@@ -1,0 +1,173 @@
+.leftSidePanel {
+  width: 70px;
+  min-width: 70px;
+  height: 100vh;
+  background: #FFF;
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 10;
+  padding-top: 70px;
+  text-align: center;
+  margin: 0 auto;
+  border-right: 1px solid #DDD;
+
+  .sidebarBody{
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    .main-menu .nav-item {
+      a {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: 737373;
+        padding: 10px 0 10px 0;
+        &:hover {
+          color: red;
+        }
+      }
+      .active {
+        color: #1389dc !important;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+
+.leftSidePanel .sidebarBody .main-menu .nav, .leftSidePanel .sidebarBody .settings-menu .nav {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.leftSidePanel .sidebarBody .main-menu .nav .nav-item{
+  position: relative;
+  line-height: 25px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.leftSidePanel .sidebarBody .main-menu .nav .nav-item a{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0;
+  height: 32px;
+  white-space: nowrap;
+  color: #676767;
+  text-decoration: none;
+}
+.leftSidePanel .sidebarBody .main-menu .nav .nav-item a svg, .leftSidePanel .sidebarBody .settings-menu .nav .nav-item svg {
+  width: 37px;
+  height: 26px;
+  position: absolute;
+  color: inherit;
+  top: 4px;
+}
+.leftSidePanel .sidebarBody .main-menu .nav .nav-item a .linkTitle, .leftSidePanel .sidebarBody .settings-menu .nav .nav-item .linkTitle {
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.leftSidePanel .sidebarBody .settings-menu {
+  color: #fff;
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+.leftSidePanel .sidebarBody .settings-menu .nav .nav-item{
+  display: block;
+  position: relative;
+  line-height: 32px;
+  align-items: center;
+  padding: 0;
+  height: 32px;
+  white-space: nowrap;
+  color: #676767;
+  text-decoration: none;
+  margin: 7px 0;
+  width: 100%;
+}
+.leftSidePanel .sidebarBody .settings-menu .nav .nav-item.disabled{
+  z-index: -100 !important;
+  pointer-events: none !important;
+  opacity: 0.6 !important;
+  cursor: no-drop !important;
+}
+.leftSidePanel .sidebarBody .menu-collapse-icon {
+  color: #7b7b7b;
+  position: absolute;
+  bottom: 14px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+}
+.sidebarBody .settings-menu .nav-item.rotate-180 svg {
+  transform: rotate(-180deg);
+}
+.toggleMenu .menuToggleOpen,
+.menuToggleClose {
+  display: none;
+}
+.toggleMenu .menuToggleClose,
+.menuToggleOpen {
+  display: block;
+}
+.menuToggleOpen svg, .menuToggleClose svg{
+  color: #1389dc !important;
+  width: 18px;
+}
+.toggleMenu .leftSidePanel {
+  width: 200px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.toggleMenu .leftSidePanel .sidebarBody .main-menu .nav .nav-item a .linkTitle, .toggleMenu .leftSidePanel .sidebarBody .settings-menu .nav .nav-item .linkTitle{
+  visibility: visible;
+  opacity: 1;
+}
+.toggleMenu .leftSidePanel .sidebarBody .menu-collapse-icon{
+  left: unset;
+  right: 14px;
+}
+
+.breadcrumb{
+  position: absolute;
+  left: 70px;
+  top: 50px;
+  padding: .75rem 1rem 0rem 1rem !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  .MuiBreadcrumbs-separator{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .MuiTypography-root {
+    font-size: 15px;
+  }
+}
+.toggleMenu{
+
+  .breadcrumb{
+    margin-left: calc(100% - 91%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}

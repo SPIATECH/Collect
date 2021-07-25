@@ -1,0 +1,27 @@
+$headerHeight : 120px;
+
+.homeRightContainer{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.headerContainer{
+    width: 100%;
+    height: $headerHeight;
+    background: lightgray; 
+    border-bottom: 1px solid black;
+}
+
+.tabContentarea {
+    display: flex;
+    flex-flow: row;
+    height: auto;
+    margin-top: 85px;
+}
+
+.Login-logo{
+    width: 15%;
+    margin-bottom: 10px;
+}

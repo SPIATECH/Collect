@@ -1,0 +1,8 @@
+{ 
+    "id":"smtp",
+    "host":"smtp.gmail.com",
+    "port":"465",
+    "smtpusername":"",
+    "password":"",
+    "from":"alerts@i4suite1.com"
+ }

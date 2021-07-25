@@ -1,0 +1,37 @@
+pool:
+  name: Azure Pipelines
+  demands: Cmd
+  vmImage: vs2017-win2016
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node 12.11.1'
+  inputs:
+    versionSpec: 12.11.1
+
+- task: Npm@1
+  displayName: 'npm install ui'
+  inputs:
+    workingDir: 'Collect/CollectUI/collect-ui-react/src'
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm pkg'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'install -g pkg'
+
+- task: Bash@3
+  displayName: 'Collect UI Build'
+  inputs:
+    targetType: filePath
+    filePath: Collect/CollectUI/build/build.sh
+    workingDirectory: '$(Build.SourcesDirectory)'
+    failOnStderr: true
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: UI'
+  inputs:
+    PathtoPublish: 'Collect/CollectUI/collect-ui-react/build'
+    ArtifactName: public
+

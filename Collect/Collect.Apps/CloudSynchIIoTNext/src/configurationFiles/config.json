@@ -1,0 +1,8 @@
+{
+  "Mqttbroker": "tcp://127.0.0.1:3883",
+  "Tsdbserver": "http://localhost:8086",
+  "HostName": "app.iiotnext.com",
+  "PortNum": "443",
+  "Protocol": "https",
+  "Limit": "10"
+}

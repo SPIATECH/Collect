@@ -1,0 +1,76 @@
+.alerts-left-side-container{
+    overflow-y: scroll;
+}
+.deviceListHead{
+    button{
+        padding: 0px 0px;
+
+        a{
+            padding: 3px 11px;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+}
+.section-device-list{
+    .table{
+        th{
+            text-transform: capitalize;
+        }
+        th:nth-child(2) {
+            width: 25%;
+        }
+        td:nth-child(2) {
+            width: 25%;
+        }
+    }
+    thead{
+        tr {
+            th:first-child{
+                width: 4%;
+            }
+            th:last-child{
+                width: 8%;
+            }
+        }
+    }
+    tbody{
+        tr {
+            td{
+                .nameStyle:hover{
+                    text-decoration: underline;
+                }
+            }
+            td:first-child{
+                width: 4%;
+            }
+            td:last-child{
+                width: 8%;
+                svg{
+                    position: relative;
+                }
+                div{
+                    display: table-cell;
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    span{
+                        display: inline-block;
+                        margin: 0 3px 0 3px;
+                    }
+                }
+            }
+        } 
+    }
+}
+.pos-abs{
+    position: relative;
+    text-align: right;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 9px;
+    padding-bottom: 7px;
+}

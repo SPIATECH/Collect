@@ -1,0 +1,6 @@
+{
+  "name": "LocalDb",
+  "connector": "memory",
+  "localStorage": "spia-db",
+  "file": "spiadb.json"
+}

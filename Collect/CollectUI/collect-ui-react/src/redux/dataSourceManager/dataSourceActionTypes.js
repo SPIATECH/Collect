@@ -1,0 +1,12 @@
+//  Collect : Collect, Store and Forward industrial data
+//  Copyright SPIA Tech India, www.spiatech.com
+//  MIT License
+
+// Fetch list of tags from the api
+export const GET_DEVICE_TYPE_REQUEST = 'GET_DEVICE_TYPE_REQUEST'
+export const GET_DEVICE_TYPE_REQUEST_SUCCESS = 'GET_DEVICE_TYPE_REQUEST_SUCCESS'
+export const GET_DEVICE_TYPE_REQUEST_FAILED = 'GET_DEVICE_TYPE_REQUEST_FAILED'
+export const SELECT_DEVICE_TYPE = 'SELECT_DEVICE_TYPE'
+export const SELECT_DEVICE_TYPE_ID = 'SELECT_DEVICE_TYPE_ID'
+export const SET_DEVICE_TYPE_ERROR = 'SET_DEVICE_TYPE_ERROR'
+export const GET_SELECTED_DEVICE_TYPE_SUCCESS = 'GET_SELECTED_DEVICE_TYPE_SUCCESS'

@@ -1,0 +1,8 @@
+{
+  "ThreadSkipWarnCount": "5",
+  "ChunkSizeForBits": "100",
+  "ChunkSizeForWords": "100",
+  "BrokerUrl": "127.0.0.1:3883",
+  "LogLevel": "Debug",
+  "DataSource": "MQTT"
+}

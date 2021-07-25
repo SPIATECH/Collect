@@ -1,0 +1,4 @@
+{
+  "mqttbroker": "tcp://127.0.0.1:3883",
+  "tsdbserver": "http://localhost:8086"
+}

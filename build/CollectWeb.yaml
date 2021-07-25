@@ -1,0 +1,52 @@
+pool:
+  name: Azure Pipelines
+  demands: Cmd
+  vmImage: vs2017-win2016
+  
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node 12.11.1'
+  inputs:
+    versionSpec: 12.11.1
+
+- task: Npm@1
+  displayName: 'npm install web'
+  inputs:
+    workingDir: src
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm cache'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'install -g npm-cache'
+
+- task: Npm@1
+  displayName: 'npm pkg'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'install -g pkg'
+
+- task: DownloadBuildArtifacts@0
+  displayName: 'Download WebUI'
+  inputs:
+    buildType: specific
+    project: 'a24fb15e-188f-4a54-bc1b-0e5fbf4843a2'
+    pipeline: 73
+    artifactName: public
+    downloadPath: '$(System.DefaultWorkingDirectory)'
+
+- task: BatchScript@1
+  displayName: WebSever
+  inputs:
+    filename: build/build.bat
+    arguments: PIPELINE
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: Release'
+  inputs:
+    PathtoPublish: bin/x64/Release
+    ArtifactName: Release
+

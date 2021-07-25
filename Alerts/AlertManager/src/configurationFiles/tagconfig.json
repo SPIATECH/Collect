@@ -1,0 +1,109 @@
+[ 
+    { 
+       "enabled":true,
+       "id":"2ebd9809-1f29-427f-8114-1fed41607fa4",
+       "name":"Alert2",
+       "type":"string",
+       "period":"1s",
+       "function":"LAST",
+       "context":"string",
+       "user":"string",
+       "deadbandvalue":"string",
+       "metadata":{ 
+ 
+       },
+       "alertinfo":{ 
+          "condition":">",
+          "value":"70"
+       },
+       "tagId":"c1576c07-e376-48fa-a600-8617f918362c",
+       "notifications":[ 
+          { 
+             "id":2,
+             "name":"Tag2_Alert2",
+             "email":{ 
+                "to":"abc@gmail.com,xyz@gmail.com",
+                "subject":"test",
+                "message":"test"
+             },
+             "sms":{ 
+                "to":"9874605432,9875612355",
+                "message":"test"
+             },
+             "alertId":"2ebd9809-1f29-427f-8114-1fed41607fa4"
+          }
+       ]
+    },
+    { 
+       "enabled":true,
+       "id":"494af2ff-d33e-4323-8f12-8bc82b9da9e6",
+       "name":"Alert1",
+       "type":"string",
+       "period":"1s",
+       "function":"MEAN",
+       "context":"string",
+       "user":"string",
+       "deadbandvalue":"string",
+       "metadata":{ 
+ 
+       },
+       "alertinfo":{ 
+          "condition":"<",
+          "value":"40"
+       },
+       "tagId":"c1576c07-e376-48fa-a600-8617f918362c",
+       "notifications":[ 
+          { 
+             "id":1,
+             "name":"Tag2_Alert1",
+             "email":{ 
+                "to":"abc@gmail.com",
+                "subject":"Test message",
+                "message":"Test message"
+             },
+             "sms":{ 
+                "to":"9874605432",
+                "message":"Test message"
+             },
+             "alertId":"494af2ff-d33e-4323-8f12-8bc82b9da9e6"
+          }
+       ]
+    },
+    { 
+        "enabled":true,
+        "id":"98C727A8-93CB-4246-8C1A-282292EED907",
+        "name":"Alert3",
+        "type":"string",
+        "period":"1s",
+        "function":"ACTIVATIONDELAY",
+        "context":"string",
+        "user":"string",
+        "deadbandvalue":"string",
+        "metadata":{ 
+  
+        },
+        "alertinfo":{ 
+           "condition":"<",
+           "value":"40",
+           "interval" : "1",
+           "unit" : "m"
+        },
+        "tagId":"c1576c07-e376-48fa-a600-8617f918362c",
+        "notifications":[ 
+           { 
+              "id":1,
+              "name":"Tag2_Alert1",
+              "email":{ 
+                 "to":"abc@gmail.com",
+                 "subject":"Test message",
+                 "message":"Test message"
+              },
+              "sms":{ 
+                 "to":"9874605432",
+                 "message":"Test message"
+              },
+              "alertId":"494af2ff-d33e-4323-8f12-8bc82b9da9e6"
+           }
+        ]
+     }
+ ]

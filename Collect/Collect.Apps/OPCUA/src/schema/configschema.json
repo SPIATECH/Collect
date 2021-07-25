@@ -1,0 +1,65 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://factry.io/opcua-logger-config-schema.json",
+  "type": "object",
+  "title": "Configuration Schema for Collect-x OPCUA",
+  "required": [
+    "opcua",
+    "influx"
+  ],
+  "properties": {
+    "opcua": {
+      "$id": "#/properties/opcua",
+      "type": "object",
+      "title": "The Opcua Schema",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "$id": "#/properties/opcua/properties/url",
+          "type": "string",
+          "title": "The Url Schema",
+          "default": "",
+          "pattern": "^(.*)$"
+        },
+        "certificate": {
+          "$id": "#/properties/opcua/properties/certificate",
+          "type": "string",
+          "title": "Certificate file path",
+          "default": ""
+        }
+      }
+    },
+    "influx": {
+      "$id": "#/properties/influx",
+      "type": "object",
+      "title": "The Influx Schema",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "$id": "#/properties/influx/properties/url",
+          "type": "string",
+          "title": "The Url Schema",
+          "default": "",
+          "pattern": "^(.*)$"
+        },
+        "writeInterval": {
+          "$id": "#/properties/influx/properties/writeInterval",
+          "type": "integer",
+          "title": "The Writeinterval Schema",
+          "default": 1000
+        },
+        "writeMaxPoints": {
+          "$id": "#/properties/influx/properties/maxPoints",
+          "type": "integer",
+          "title": "The Maxpoints Schema",
+          "default": 1000
+        }
+      }
+    }
+  }
+}

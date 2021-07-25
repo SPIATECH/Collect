@@ -1,0 +1,22 @@
+{
+  "configs" : [
+    {
+        "devicetoken" : "qFNwlpcPgMtVkyfmjgzr",
+         "lastvalueperiod"  : "5000ms",
+         "historicalvalueperiod" : "1s",
+         "tags": [
+      { "tagid" : "72a59127-02be-48b4-a20f-10a05bd63a40", "tagname" : "Weighing Scale 1", "type":"telemetry", "mode": "last", "start" : "", "delta":"5s" },
+              { "tagid" : "c4d0cf58-5609-4da9-868d-76a1e3e34151", "tagname" : "Weighing Scale 2", "type":"telemetry", "mode": "historical", "start" : "", "delta":"" },
+      { "tagid" : "495ea9e9-93e3-4448-a275-09a26e275fe3", "tagname" : "Weighing Scale 3", "type":"telemetry", "mode": "last", "start" : "", "delta":"" },
+      { "tagid" : "e4b5377e-2ba1-4739-a75b-4a179e2124f6", "tagname" : "Weighing Scale 4", "type":"telemetry", "mode": "last", "start" : "", "delta":"" },
+      { "tagid" : "15ee6876-2aae-4c5e-bf19-76b565b2ac58", "tagname" : "Weighing Scale 5", "type":"telemetry", "mode": "historical", "start" : "", "delta":"" },
+      { "tagid" : "66796f9e-281b-4f4f-a8c9-33fb96ce94f7", "tagname" : "Weighing Scale 6", "type":"telemetry", "mode": "last", "start" : "", "delta":"15s" },
+      { "tagid" : "78d83140-a584-4a06-ab78-355d9934f29b", "tagname" : "Weighing Scale 7", "type":"telemetry", "mode": "last", "start" : "", "delta":"" },
+      { "tagid" : "68d2420e-2372-4ccc-9d54-d29ce31a5ce3", "tagname" : "Weighing Scale 8", "type":"telemetry", "mode": "last", "start" : "", "delta":"" },
+      { "tagid" : "684b74b7-114d-4850-a15f-a56f70172605", "tagname" : "Weighing Scale 9", "type":"telemetry", "mode": "last", "start" : "", "delta":"" },
+      { "tagid" : "2aae7fe1-b229-4199-9f2c-0d189ee1d3c8", "tagname" : "Weighing Scale 10", "type":"telemetry", "mode": "historical", "start" : "2020-10-19T18:05:05+05:30", "delta":"" },
+      { "tagid" : "2aae7fe1-b229-4199-9f2c-0d189ee1d3c8", "tagname" : "Attribute1", "type":"attribute", "mode": "", "start" : "", "delta":"" }
+         ]
+    }
+  ]
+}

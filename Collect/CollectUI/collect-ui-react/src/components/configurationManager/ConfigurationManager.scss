@@ -1,0 +1,28 @@
+.configurationManagerContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.form-btn {
+  margin-right: 20px !important;
+}
+.tab-fixe-h{
+
+  .MuiFormControl-root{
+    max-width: 277px;
+    width: 100%;
+  }
+
+  .MuiExpansionPanelSummary-root.Mui-expanded {
+      min-height: unset;
+  }
+
+  .MuiExpansionPanelSummary-content.Mui-expanded{
+    margin: unset;
+  }
+
+  .MuiOutlinedInput-input{
+    padding: 12.5px 7px;
+  }
+}

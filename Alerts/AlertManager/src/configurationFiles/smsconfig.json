@@ -1,0 +1,10 @@
+{ 
+    "id":"sms",
+    "url":"https://api.textlocal.in/send?",
+    "tokenvarname":"apikey",
+    "token":"",
+    "numbersvarname":"numbers",
+    "messagevarname":"message",
+    "sendervarname":"sender",
+    "sender":"TXTLCL"
+ }

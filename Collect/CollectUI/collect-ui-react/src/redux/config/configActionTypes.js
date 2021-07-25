@@ -1,0 +1,10 @@
+//  Collect : Collect, Store and Forward industrial data
+//  Copyright SPIA Tech India, www.spiatech.com
+//  MIT License
+
+export const GET_CONFIG_REQUEST = 'GET_CONFIG_REQUEST'
+export const GET_CONFIG_REQUEST_SUCCESS = 'GET_CONFIG_REQUEST_SUCCESS'
+export const GET_CONFIG_REQUEST_FAILED = 'GET_CONFIG_REQUEST_FAILED'
+export const POST_CONFIG_REQUEST = 'GET_CONFIG_REQUEST'
+export const POST_CONFIG_REQUEST_SUCCESS = 'GET_CONFIG_REQUEST_SUCCESS'
+export const POST_CONFIG_REQUEST_FAILED = 'GET_CONFIG_REQUEST_FAILED'

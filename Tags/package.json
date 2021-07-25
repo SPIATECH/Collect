@@ -1,0 +1,101 @@
+{
+  "name": "collect",
+  "version": "1.0.0",
+  "description": "Collect Web Application",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "clean": "lb-clean dist *.tsbuildinfo",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run clean && npm run build && npm run prettier:fix",
+    "test": "lb-mocha --exit -R spec  --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha -R spec --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "docker:build": "docker build -t alert-configuration-ws .",
+    "docker:run": "docker run -p 3000:3000 -d alert-configuration-ws",
+    "migrate": "node ./dist/migrate",
+    "prestart": "npm run build",
+    "start": "node -r source-map-support/register .",
+    "prepublishOnly": "npm run test",
+    "gen-cli": "openapi-generator generate -i http://127.0.0.1:8090/openapi.yaml -g javascript -o public/client-sdk"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/authentication": "^6.0.1",
+    "@loopback/boot": "^2.5.1",
+    "@loopback/context": "^3.10.1",
+    "@loopback/core": "^2.9.5",
+    "@loopback/extension-health": "^0.4.13",
+    "@loopback/openapi-v3": "^3.4.9",
+    "@loopback/repository": "^2.11.2",
+    "@loopback/rest": "^6.2.0",
+    "@loopback/rest-explorer": "^2.2.10",
+    "@loopback/service-proxy": "^2.3.8",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/moment-timezone": "^0.5.30",
+    "@types/uuid": "^3.4.7",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.28",
+    "mqtt": "^4.2.1",
+    "pkg": "^4.4.9",
+    "uuid": "^3.4.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.2.2",
+    "@loopback/eslint-config": "^9.0.2",
+    "@loopback/testlab": "^3.2.4",
+    "@openapitools/openapi-generator-cli": "^1.0.8-4.2.2",
+    "@types/node": "^10.17.28",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-plugin": "^2.2.1",
+    "eslint-plugin-mocha": "^7.0.0",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^8.8.1",
+    "typescript": "~4.0.2"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": [
+      "node_modules/**/intl/**/*",
+      "node_modules/*/**/*.json",
+      "node_modules/*/**/*.ejs",
+      "node_modules/*/**/*.css",
+      "node_modules/es-get-iterator/**",
+      "dist/**/*",
+      "public/**/*"
+    ]
+  },
+  "bin": "index.js"
+}

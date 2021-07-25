@@ -1,0 +1,83 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://factry.io/opcua-logger-config-schema.json",
+  "type": "object",
+  "title": "Tag Configuration Schema for Collect-x OPCUA",
+  "required": [
+    "metrics"
+  ],
+  "properties": {
+    "metrics": {
+      "$id": "#/properties/metrics",
+      "type": "array",
+      "title": "The Metrics Schema",
+      "items": {
+        "$id": "#/properties/metrics/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "measurement",
+          "datatype",
+          "nodeId",
+          "method",
+          "interval"
+        ],
+        "properties": {
+          "measurement": {
+            "$id": "#/properties/metrics/items/properties/measurement",
+            "type": "string",
+            "title": "The Measurement Schema",
+            "default": "",
+            "pattern": "^(.*)$"
+          },
+          "datatype": {
+            "$id": "#/properties/metrics/items/properties/datatype",
+            "type": "string",
+            "title": "The Datatype Schema",
+            "default": "number",
+            "enum": [
+              "number", 
+              "boolean",
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "tags": {
+            "$id": "#/properties/metrics/items/properties/tags",
+            "type": "object",
+            "title": "The Tags Schema",
+            "default": null
+          },
+          "nodeId": {
+            "$id": "#/properties/metrics/items/properties/nodeid",
+            "type": "string",
+            "title": "The NodeId Schema",
+            "default": "",
+            "pattern": "^ns=\\d+;((s|b)=\\S+.*\\S+|i=\\d+|g=[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})$"
+          },
+          "method": {
+            "$id": "#/properties/metrics/items/properties/method",
+            "type": "string",
+            "title": "The Method Schema",
+            "default": "polled",
+            "enum": [
+              "polled",
+              "monitored"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "interval": {
+            "$id": "#/properties/metrics/items/properties/interval",
+            "type": "integer",
+            "title": "The Interval Schema",
+            "default": 1000,
+            "examples": [
+              1000
+            ]
+          }
+        }
+      }
+    }
+  }
+}

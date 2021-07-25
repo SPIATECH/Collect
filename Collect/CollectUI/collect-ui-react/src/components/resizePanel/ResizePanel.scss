@@ -1,0 +1,53 @@
+.sidebar {
+    min-width: 330px;
+    width:100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sidebar-480{
+    min-width: 480px;
+    width:100%;
+    box-sizing: border-box;
+}
+.panel {    
+    display: flex;
+    justify-content: left;
+}
+
+.content {
+    flex-grow: 1;  
+    background: white; 
+}
+
+.customHandle {
+    cursor: ew-resize;
+    width: 2px;
+    height: 100%;
+    margin: 0px -5px;
+    background: transparent;
+    text-align: center;
+    z-index: 99999;
+    overflow: hidden;
+    display: flex;
+    align-items: center ;
+}
+
+.customResizeBorder {
+    cursor: grab;
+    width: 5px;
+    background: transparent;
+    display: flex;
+    z-index: 99999;
+    align-items: center ;
+    align-content: center ;
+    justify-content: center;
+    overflow: visible;
+
+}
+
+.treeViewContainer{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+}

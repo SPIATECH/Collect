@@ -1,0 +1,41 @@
+{
+  "server": "127.0.0.1",
+  "port": "8090",
+  "currentdir": "",
+  "enableAuthentication": false,
+  "loglevel": "debug",
+  "defaultCreds": {
+    "email": "admin",
+    "password": "admin"
+  },
+  "mqttconfig": {
+    "authenticationEnabled": true,
+    "username": "spiai4user",
+    "password": "All your sensors are mine",
+    "broker": "localhost:3883",
+    "clientOptions": {
+      "keepAlive": 1,
+      "connectTimeout": 1000,
+      "reconnectPeriod": 5000
+    }
+  },
+
+  "info": {
+    "version": "DEV",
+    "user": "DEV_CONFIG",
+    "hostname": "HOSTNAME_CONFIG",
+    "config": {
+      "alertmax": 2,
+      "alerttotalmax": 50,
+      "notificationmax": 50,
+      "language": "en"
+    }
+  },
+
+  "CONFIG_TOPIC_ALL_GROUPS_SUFFIX": "collect/retain/allgroups",
+
+  "retainedMessages": [
+    "spiai4suite/collect/retain/allgroups",
+    "spiai4suite/DEVICES-TYPES/ALL"
+  ]
+}

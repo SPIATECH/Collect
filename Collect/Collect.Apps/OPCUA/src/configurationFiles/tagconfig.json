@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "measurement": "TagValues",
+      "datatype": "number",
+      "tags": {
+	    "TAGID": "5e50eb7f-dc90-4296-8088-28707c1e6ac4",
+        "TAGINFO": "OPCUA"
+      },
+      "nodeId": "ns=2;s=KALAMASSERY.L1.A1.T13.P1",
+      "method": "polled",
+      "interval": 1000
+    }
+  ]
+}

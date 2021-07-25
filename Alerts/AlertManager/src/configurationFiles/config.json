@@ -1,0 +1,14 @@
+{
+  "version": "8080",
+  "mqttbroker" : "tcp://127.0.0.1:3883",
+  "tickfilespath": "C:/SPIA/Appdata/AlertManager/TICK-SCRIPTS",
+  "intervalperiod": "1s",
+  "kapacitoraddress": "http://localhost:9092",
+  "kapacitorpath": "Alerts/Kapacitor",
+  "loadconfigonstart": false,
+  "influxdbout": true,
+  "IsKapacitorLogEnabled": true,
+  "smtpconfigpath": "./smtpconfig.json",
+  "smsconfigpath": "./smsconfig.json",
+  "tagconfigpath": "./tagconfig.json"
+}
