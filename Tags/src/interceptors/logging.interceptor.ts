@@ -14,7 +14,7 @@ import {
 } from '@loopback/context';
 import {RestBindings} from '@loopback/rest';
 import {SpiaLoggerService} from '../services';
-
+import { Request } from '@loopback/rest';
 /**
  * This class will be bound to the application as an `Interceptor` during
  * `boot`
