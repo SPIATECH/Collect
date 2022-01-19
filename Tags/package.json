@@ -1,5 +1,5 @@
 {
-  "name": "collect",
+  "name": "Tags",
   "version": "1.0.0",
   "description": "Collect Web Application",
   "keywords": [
@@ -70,20 +70,17 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@loopback/build": "^6.2.2",
-    "@loopback/eslint-config": "^9.0.2",
-    "@loopback/testlab": "^3.2.4",
-    "@openapitools/openapi-generator-cli": "^1.0.8-4.2.2",
-    "@types/node": "^10.17.28",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "@typescript-eslint/parser": "^2.31.0",
-    "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-eslint-plugin": "^2.2.1",
-    "eslint-plugin-mocha": "^7.0.0",
-    "source-map-support": "^0.5.19",
-    "ts-node": "^8.8.1",
-    "typescript": "~4.0.2"
+    "@loopback/build": "^8.0.1",
+    "@loopback/eslint-config": "^12.0.1",
+    "@loopback/testlab": "^4.0.1",
+    "@openapitools/openapi-generator-cli": "^2.4.25",
+    "@types/jest": "^27.4.0",
+    "@types/mocha": "^9.0.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-plugin": "^4.1.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   },
   "pkg": {
     "scripts": "dist/**/*.js",
