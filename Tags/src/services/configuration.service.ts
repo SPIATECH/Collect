@@ -40,7 +40,7 @@ export class ConfigurationService {
       if("object" === typeof object[key]){
         object[key] = this.parsePropertiesOfObject(object[key],prefix + key.toUpperCase() + "_");
       }else{
-        let env_key = prefix+key
+        let env_key = prefix + key.toUpperCase();
         object[key] = process.env[env_key] ?? object[key];
       }
     }
