@@ -30,7 +30,20 @@ export class ConfigurationService {
     }
     this.finalConfigs = {...this.finalConfigs, ...fileConfig};
 
+    this.finalConfigs = this.parsePropoertiesOfObject(this.finalConfigs)
+
     return this.finalConfigs;
+  }
+
+  parsePropoertiesOfObject(object:any,prefix="TAG_"):any{
+    for (let key in object){
+      if("object" === typeof object[key]){
+        object[key] = this.parsePropoertiesOfObject(prefix + key.toUpperCase() + "_", object[key]);
+      }else{
+        let env_key = prefix+key
+        object[key] = process.env[env_key] ?? object[key];
+      }
+    }
   }
 
   getConfigurationFileName(): string {
